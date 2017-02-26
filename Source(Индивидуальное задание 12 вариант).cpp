@@ -56,7 +56,7 @@ int main()
 
 
 		
-	//int y,x,r,t,i;// Òåñòèðîâàíèå 16ðè÷íîãî ïðåäñòàâëåíèÿ ÷èñëà ÷òîáû ñîâïàäàëî ñ ìîèì 
+	//int y,x,r,t,i;// for chek 16 numbers
 	//	cin >> y;
 	//	cout << "0x" << hex << y << endl;
 	//	cin >> x;
@@ -204,8 +204,8 @@ int IsEven(int*p)
 void ConvertAndCout(int numderconverte, int counter)
 {
 
-	long long remainder = numderconverte; /*îñòàòîê*/
-	int i = 0;//ñ÷¸ò÷èê äëÿ ìàññèâà 
+	long long remainder = numderconverte; 
+	int i = 0;
 	int *mass = new int[256];
 	do
 	{
@@ -259,8 +259,8 @@ void ConvertAndCout(int numderconverte, int counter)
 int CouterABSDEF(int numderconverte)
 {
 	int counter=0;
-	long long remainder = numderconverte; /*îñòàòîê*/
-	int i = 0;//ñ÷¸ò÷èê äëÿ ìàññèâà 
+	long long remainder = numderconverte; 
+	int i = 0;
 	int *mass = new int[256];
 	do
 	{
