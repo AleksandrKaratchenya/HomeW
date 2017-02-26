@@ -17,7 +17,7 @@ int IsEven(int*);
 void ConvertAndCout(int, int );
 int CouterABSDEF(int);
 void Delets2(int*, int&);
-void Delets(int*, int&);
+
 int main()
 {
 	int n =18;
@@ -152,21 +152,7 @@ void BubbleSort(int *a, int n)
 //		}
 //	}
 //}
-//void DeleteElemetsInArray(int *a, int &n)
-//{
-//	for (int j = 0,*p=a; j < n; j++,p++)
-//	{
-//		
-//		if (IsPositive(p) && IsEven(p) && (!IsPositive(p+1)) )
-//		{
-//			for (int i = j; i < n; ++i)
-//			{
-//				*(a+i) = *(a+i + 1);
-//			}
-//			--n;
-//		}
-//	}
-//}
+
 
 void DeleteElemetsInArrayA(int *a, int *z,int &n, int&m)
 {
@@ -296,18 +282,7 @@ int CouterABSDEF(int numderconverte)
 }
 
 
-void Delets(int*b, int& m)
-{
-	for (int *p = b; p < b + m; p++)
-	{
-		for (int i = 0; i < m - (p - b) - 1; ++i)
-		{
-			*(p + i) = *(p + i + 1);
-		}
-		--m;
-	}
-}
-			         
+		         
 			    
 	    
 		
