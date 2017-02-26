@@ -1,5 +1,5 @@
 #include <iostream>
-// Тестировал на 1) (0,-2,12,-7,30,-4,37,-7,270,-2,188,-7,10,-9,2730,-8,2986,-1)
+//Example 1) (0,-2,12,-7,30,-4,37,-7,270,-2,188,-7,10,-9,2730,-8,2986,-1)
 //               2) (-2,-4,0,-7,38,-1,210,-7,16,-7,8,5,-4,6,-1,8,-2,8)
 
 using namespace std;
@@ -56,7 +56,7 @@ int main()
 
 
 		
-	//int y,x,r,t,i;// Тестирование 16ричного представления числа чтобы совпадало с моим 
+	//int y,x,r,t,i;// Г’ГҐГ±ГІГЁГ°Г®ГўГ Г­ГЁГҐ 16Г°ГЁГ·Г­Г®ГЈГ® ГЇГ°ГҐГ¤Г±ГІГ ГўГ«ГҐГ­ГЁГї Г·ГЁГ±Г«Г  Г·ГІГ®ГЎГ» Г±Г®ГўГЇГ Г¤Г Г«Г® Г± Г¬Г®ГЁГ¬ 
 	//	cin >> y;
 	//	cout << "0x" << hex << y << endl;
 	//	cin >> x;
@@ -204,8 +204,8 @@ int IsEven(int*p)
 void ConvertAndCout(int numderconverte, int counter)
 {
 
-	long long remainder = numderconverte; /*остаток*/
-	int i = 0;//счётчик для массива 
+	long long remainder = numderconverte; /*Г®Г±ГІГ ГІГ®ГЄ*/
+	int i = 0;//Г±Г·ВёГІГ·ГЁГЄ Г¤Г«Гї Г¬Г Г±Г±ГЁГўГ  
 	int *mass = new int[256];
 	do
 	{
@@ -259,8 +259,8 @@ void ConvertAndCout(int numderconverte, int counter)
 int CouterABSDEF(int numderconverte)
 {
 	int counter=0;
-	long long remainder = numderconverte; /*остаток*/
-	int i = 0;//счётчик для массива 
+	long long remainder = numderconverte; /*Г®Г±ГІГ ГІГ®ГЄ*/
+	int i = 0;//Г±Г·ВёГІГ·ГЁГЄ Г¤Г«Гї Г¬Г Г±Г±ГЁГўГ  
 	int *mass = new int[256];
 	do
 	{
