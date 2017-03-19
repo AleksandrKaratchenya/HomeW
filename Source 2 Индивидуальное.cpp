@@ -15,9 +15,9 @@ double Norm(double**a, int n);
 int main()
 {
 	int n;
-	double accurancy=0.00001;
-	//cout << "Enter accurancy = ";
-	//cin >> accurancy;
+	double accurancy;
+	cout << "Enter accurancy = ";
+	cin >> accurancy;
 	cout << "Enter n = ";
 	cin >> n;
 	cout << endl;
@@ -31,12 +31,12 @@ int main()
 		 matrix2 = CreateMatrix(n, matrix2);
 		 DisplayMatrix(matrix2, n);
 		 cout << endl;
-		/* cout << "Norm 1 -Norm  2  "<< Norm(matrix1, n)- Norm(matrix2, n) <<endl;
+		 cout << "Norm 1 -Norm  2  "<< Norm(matrix1, n)- Norm(matrix2, n) <<endl;
 		 cout << "Norm 1"<< endl;
 		 cout << Norm(matrix1, n);
 		 cout << endl;
 		 cout << "Norm  2  " << endl;
-		 cout << Norm(matrix2, n);*/
+		 cout << Norm(matrix2, n);
 	system("pause");
 	return 0;
 }
