@@ -1,14 +1,11 @@
 #include<iostream>
-#include<cmath>
 using namespace std;
 int ** AllocateMemory1(int n);
+int* AllocateMemory(int n);
 void DisplayMatrix(int**matrix, int n);
 void DisplayArray(int * a, int n);
 void RandomMatrix(int**matrix,  int n);
 int*  CreateArray(int**matrix, int n, int i, int j, int p, int &k);
-//void CreateArray(int**matrix, int n, int i, int j, int p);
-int* AllocateMemory(int n);
-//void  CreateArray2(int**matrix, int n, int i, int j);
 int MaxInArray(int*arr, int d);
 int FindMaxElementInTheSelectedArea(int**matrix, int n, int i, int j);
 int ** CreateMatrix(int  **matrix, int n);
@@ -23,9 +20,9 @@ int main()
 	int **matrix2 = AllocateMemory1(n);
 	//RandomMatrix(matrix1,n);
 	EnterMatrix(matrix1, n);
-    cout << "Original matrix" << endl;
+        cout << "Original matrix" << endl;
 	DisplayMatrix(matrix1, n);
-    cout << endl;
+        cout << endl;
 	matrix2 = CreateMatrix(matrix1, n);
 	cout << "Resulting matrix" << endl;
 	DisplayMatrix(matrix2, n);
@@ -103,7 +100,7 @@ int FindMaxElementInTheSelectedArea(int**matrix, int n, int i, int j)
 		if (j < 0) 
 			j = 0;
 		if (p < 0) p = 0;
-        arr= CreateArray(matrix, n, i, j, p,k);
+                arr= CreateArray(matrix, n, i, j, p,k);
 		dimension[l] = MaxInArray(arr, k);
 		k = 0;
 		l++;
