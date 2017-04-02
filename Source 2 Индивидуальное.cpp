@@ -45,7 +45,7 @@ double Sinus(double x, double eps)// синус
 {
 	double res = 0, term = x, p = -1;
 	int i = 1;
-	while (fabs(term) > eps)
+	while (fabs(res) > eps)
 	{
 		res += term;
 		i += 2;
