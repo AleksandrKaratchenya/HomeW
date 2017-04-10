@@ -43,13 +43,21 @@ int main()
 
 double Sinus(double x, double eps)// синус
 {
-	double res = 0, term = x, p = -1;
+	double res = 0,  p = -1;
+	long double term = x;
 	int i = 1;
-	while (fabs(res) > eps)
+	long double pi = acos((long double)-1);
+	if (x > (2 * pi))
+	{
+		long long g = (long long)(x / (2 * pi));
+		x = x - (2*pi*g);
+		term = x;
+	}
+	while (fabs(term) >= eps)
 	{
 		res += term;
 		i += 2;
-		term *= (x*x / (i*(i - 1))*p);
+		term *= (p*(x*x / (i*(i - 1))));
 	}
 
 	return res;
